@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>svg-knock-out-text</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="svg-container">      
+        <svg width="100%" height="100%" viewbox="0 0 1000 600"><!-- No ViewBox property, no scaling -->            
+            <rect class="svg-background" width="100%" height="100%" fill="#000" x="0" y="0" fill-opacity=".75" mask="url(#svg-mask)"/>             
+            <mask id="svg-mask">
+                <rect width="100%" height="100%" fill="#fff" x="0" y="0" />
+                <text x="50%" dy="250" fill="#000" text-anchor="middle">Knock Out Text</text>
+                <text x="50%" dy="350" fill="#000" text-anchor="middle">SVG Example</text>
+            </mask>         
+        </svg>          
+    </div>
+</body>
+</html>
